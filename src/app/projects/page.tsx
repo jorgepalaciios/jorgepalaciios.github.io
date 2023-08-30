@@ -8,6 +8,12 @@ export default function Projects() {
           My Projects &nbsp;
         </h1>
       </div>
+      <div>
+        <p>
+          You will probably find detailed explanation of projects in which I{'\''}ve worked on,&nbsp;
+          or I have experience with!
+        </p>
+      </div>
 
 
     </main>
