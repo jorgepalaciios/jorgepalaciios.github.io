@@ -7,6 +7,11 @@ export default function AboutMe() {
           About me &nbsp;
         </h1>
       </div>
+      <div className="z-10 w-full max-w-6xl items-center justify-between font-mono text-lg lg:flex">
+        <p>
+          This is a short description of my professional career
+        </p>
+      </div>
 
 
     </main>
