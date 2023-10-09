@@ -1,4 +1,4 @@
-
+// import Link from "next/link"
 // import Image from 'next/image'
 
 export default function Home() {
@@ -39,6 +39,7 @@ export default function Home() {
           priority
         />
       </div> */}
+
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
