@@ -5,10 +5,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Jorge Palacios | About me',
-  description: 'Systems Engineer - FullStack Developer',
+  description: 'a brief description about me in life',
 }
 
-export default function RootLayout({
+export default function AboutMeLayout({
   children,
 }: {
   children: React.ReactNode

@@ -8,10 +8,10 @@ const inter = Blaka_Ink({
 
 export const metadata = {
   title: 'Jorge Palacios | My Projects',
-  description: 'Systems Engineer - FullStack Developer',
+  description: 'My personal projects as a developer',
 }
 
-export default function RootLayout({
+export default function ProjectsLayout({
   children,
 }: {
   children: React.ReactNode
