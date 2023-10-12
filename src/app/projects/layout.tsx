@@ -1,10 +1,7 @@
 import '../globals.css'
-import { Blaka_Ink } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
-const inter = Blaka_Ink({
-  subsets: ['latin-ext'],
-  weight: '400'
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Jorge Palacios | My Projects',
@@ -17,8 +14,6 @@ export default function ProjectsLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <section className={inter.className}>{children}</section>
   )
 }

@@ -14,8 +14,6 @@ export default function AboutMeLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+    <section className={inter.className}>{children}</section>
+)
 }
