@@ -6,6 +6,9 @@
 .pnp.js
 /.firebase
 
+#Env Variables
+.env.local
+
 # testing
 /coverage
 
