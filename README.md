@@ -1,3 +1,11 @@
+This project is my portfolio, here you will find basic info about me and a brief of my professional carear as a systems engineer
+
+// profile picture
+
+//links to social media accounts
+
+//link to my youtube channel
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
