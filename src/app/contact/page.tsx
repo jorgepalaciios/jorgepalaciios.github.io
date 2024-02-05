@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <section className="flex min-h-screen flex-col items-center justify-between">
+      <section className="flex flex-col items-center justify-between">
 
         <Image 
             className="mt-8 dark:drop-shadow-[0_0_0.2rem_#ffffff70] "

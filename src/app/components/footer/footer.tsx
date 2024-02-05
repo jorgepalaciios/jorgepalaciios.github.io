@@ -7,11 +7,11 @@ import { FooterLogo } from "../images/images"
 
 export default function Footer(){
   return (
-    <footer className="fixed bottom-0 h-[80px] w-full z-30 bg-white px-8 py-2">
-      <nav className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
-        <Link href={'/'}>
+    <footer>
+      <nav className="flex flex-row flex-wrap items-center px-64 dark:bg-zinc-900 bg-neutral-50 text-center md:justify-center">
+        {/* <Link href={'/'}>
           <FooterLogo />
-        </Link>
+        </Link> */}
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Link
@@ -39,9 +39,9 @@ export default function Footer(){
           </li>
         </ul>
       </nav>
-      <hr className="my-3 border-blue-gray-50" />
-      <p className="block text-center text-sm leading-relaxed text-gray-900 antialiased">
-        <small>© 2023 Jorge Palacios</small>
+      <hr className="my-2 border-blue-gray-50" />
+      <p className="flex justify-center items-center text-center text-md leading-relaxed dark:text-neutral-50 text-gray-900 antialiased">
+        <small> 2024 Jorge Palacios</small>
       </p>
 </footer>
   )

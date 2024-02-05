@@ -4,11 +4,11 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Jorge Palacios | Learn',
-  description: 'Useful courses and tutorials to start developing',
+  title: 'Jorge Palacios | Templates',
+  description: 'Useful templates to start developing right away',
 }
 
-export default function LearnLayout({
+export default function TemplatesLayout({
   children,
 }: {
   children: React.ReactNode

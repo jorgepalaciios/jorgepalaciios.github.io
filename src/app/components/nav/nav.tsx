@@ -5,27 +5,16 @@ export default function Nav () {
 
   const navElements = ['Experience', 'Skills', 'Several']
 
-  // const content = (
-  //   <aside>
-  //     <nav className="sticky z-0 left-2 flex-wrap flex-col ">
-  //       <Link href={}>
-
-  //       </Link>
-
-  //     </nav>
-  //   </aside>
-  // )
-
   return(
     <aside>
       
-          <nav className="sticky z-0 left-2 flex-wrap flex-col ">
+          <nav className="sticky z-0 left-1 flex-wrap flex-col ">
             <Link href={'/#experience'} className="">
               <h2 className="mb-3 text-2xl font-semibold">Experience </h2>
       
             </Link>
       
-            <Link href={'/#Skills'} className="">
+            <Link href={'/#skills'} className="">
               <h2 className="mb-3 text-2xl font-semibold"> Skills
               </h2>
       

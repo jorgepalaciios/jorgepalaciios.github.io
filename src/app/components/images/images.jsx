@@ -1,28 +1,54 @@
+'use client'
 import Image from "next/image"
-
+import {Avatar} from '@nextui-org/react'
 //Logo nav bar
-export function LogoImg() {
+export function NavBarLogo() {
     return (
-        <Image 
-        className="dark:drop-shadow-[0_0_0.2rem_#ffffff70] "
-        src="/japc2.svg"
-        alt="japc shirt"
-        width={30}
-        height={30}
-        priority/>     
+      <Avatar src="./professional-profile-picture.png" size="md"  />
+        // <Image 
+        // className="dark:drop-shadow-[0_0_0.2rem_#ffffff70] "
+        // src="/professional-profile-picture.png"
+        // alt="japc shirt"
+        // width={30}
+        // height={30}
+        // priority/>     
     )
 }
-
+// main logo
+// export function LogoImg() {
+//     return (
+//         <Image 
+//         className="dark:drop-shadow-[0_0_0.2rem_#ffffff70] "
+//         src="/professional-profile-picture.png"
+//         alt="japc shirt"
+//         width={200}
+//         height={200}
+//         priority/>     
+//     )
+// }
+//profile picture
+export function ProfilePicture() {
+  return (
+    <Image 
+    src="/professional-profile-picture.png" 
+    className="picture" 
+    alt="profile picture" 
+    width={300}
+    height={300}
+    />
+  )
+}
 //footer logo
 export function FooterLogo() {
   return (
-    <Image
-    className="dark:drop-shadow-[0_0_0.2rem_#ffffff70] "
-    src="/japc2.svg"
-    alt="japc shirt"
-    width={20}
-    height={20}
-    priority/> 
+    <Avatar src="./professional-profile-picture.png" size="xs"  />
+    // <Image
+    // className="dark:drop-shadow-[0_0_0.2rem_#ffffff70] "
+    // src="/japc2.svg"
+    // alt="japc shirt"
+    // width={20}
+    // height={20}
+    // priority/> 
   )
 }
 
