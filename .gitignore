@@ -4,10 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/.firebase
-
-#Env Variables
-.env.local
+.yarn/install-state.gz
 
 # testing
 /coverage
@@ -37,5 +34,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-#firebase

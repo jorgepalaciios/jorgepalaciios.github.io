@@ -1,60 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html {
-  width: auto;
-  height: auto;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 
 body {
-  @apply antialiased;
-}
-.main {
-  @apply relative antialiased z-0 px-6 sm:px-14 md:px-28 lg:px-48 mb-12;
-}
-.header {
-  @apply sticky inset-0 z-10 block h-max rounded-none   lg:py-2;
-}
-
-/* INTRO */
-.intro {
-  @apply flex flex-col items-center sm:flex-row sm:gap-8 sm:justify-center lg:gap-44;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
-.intro-text {
-  @apply flex flex-col gap-1 md:gap-2 md:pr-unit-xl;
-}
-
-.intro-text h1 {
-  @apply text-2xl sm:text-4xl text-center sm:text-left font-bold  text-slate-600 dark:text-neutral-50;
-}
-
-.intro-text p {
-  @apply text-zinc-600 sm:text-lg dark:text-neutral-50 md:max-w-xl;
-}
-
-.experience {
-  @apply flex flex-col gap-7 pb-unit-xl dark:text-neutral-200;
-}
-
-.experience h1 {
-  @apply text-center text-xl md:text-2xl;
-}
-
-footer {
-  @apply sticky bottom-0 block h-[80px] z-30 dark:bg-zinc-900 bg-neutral-50 py-2 dark:text-neutral-50;
-}
-
-/* common classes */
-hr {
-  @apply my-4 md:my-unit-7 border border-dotted border-gray-300 dark:border-gray-600 rounded-md;
-}
-
-/* images */
-.picture {
-  @apply w-20 h-20 sm:w-24 sm:h-24 md:w-32  md:h-32;
-}
-
-.picture-container {
-  @apply z-0 bg-neutral-50 max-w-fit max-h-fit dark:bg-zinc-800/60 border-8 border-neutral-50 dark:border-zinc-900/80 shadow-md rounded-full overflow-hidden;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
