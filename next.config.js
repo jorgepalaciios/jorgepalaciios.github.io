@@ -11,7 +11,7 @@ const nextConfig = {
  
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
-  output: "export",
+  // output: "export",
   reactStrictMode: true,
 }
  
