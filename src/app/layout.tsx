@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { montserrat } from "./ui/fonts";
 import "./ui/globals.css";
+import { PreloadResources } from "./lib/preload";
 
 
 export const metadata: Metadata = {
@@ -31,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        <PreloadResources />
+        {children}
+      </body>
     </html>
   );
 }
