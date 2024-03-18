@@ -83,16 +83,16 @@ export const Footer = () => {
           className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
           target='_blank'
         >
-          Tailwind
+          Tailwind.
         </a>{" "}
-        and{" "}
+        {/* and{" "}
         <a
           href="https://vercel.com"
           className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
           target='_blank'
         >
           Vercel
-        </a>
+        </a> */}
       </p>
     </div>
   )
