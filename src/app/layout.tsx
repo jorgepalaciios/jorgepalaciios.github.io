@@ -1,12 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { montserrat } from "./ui/fonts";
+import "./ui/globals.css";
+import { PreloadResources } from "./lib/preload";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jorge Palacios",
-  description: "Professional portfolio",
+  title: {
+    template: '%s | Jorge Palacios',
+    default: 'Jorge Palacios',
+  },
+  description: 'This is my proffesional portfolio as a Systems Engineer',
+  metadataBase: new URL('https://jorgepalaciios.github.io/'),
+  generator: 'Next.js',
+  applicationName: 'Next.js',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Next.js', 'React', 'JavaScript', 'FrontEnd', 'Framework', 'Tutorial', 'Web development', 'backend', 'python', 'django', 'git', 'docker', 'postgresql'],
+  authors: [ { name: 'Jorge Palacios', url: 'https://github.com/jorgepalaciios/' }],
+  creator: 'Jorge Palacios',
+  publisher: 'Jorge Palacios',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        <PreloadResources />
+        {children}
+      </body>
     </html>
   );
 }
