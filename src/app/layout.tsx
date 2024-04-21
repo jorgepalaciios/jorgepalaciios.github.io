@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased bg-[#242424] md:bg-[#e7e7e7]`}
+        className={`${montserrat.className} antialiased bg-[#242424] md:bg-neutral-200`}
       >
         <PreloadResources />
         {children}
