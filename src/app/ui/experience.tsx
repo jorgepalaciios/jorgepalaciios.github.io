@@ -72,10 +72,10 @@ const experiences = [
 export function Experience() {
   return (
     <section className="flex flex-col gap-4 border-b-2 pb-6 border-gray-300">
-      <h2 className=" text-5xl font-bold text-center transition duration-300 hover:text-green-600/80 hover:transform hover:scale-110 text-green-600/50 mt-6 select-none">
+      <h2 className=" text-5xl font-bold text-center transition duration-300 hover:text-green-600/80 hover:transform hover:scale-110 text-green-600/70 mt-6 select-none">
         Experience
       </h2>
-      <ul className=" flex flex-col text-[#f3f3f3] md:text-[#242424] pt-2 gap-4 ">
+      <ul className=" flex flex-col pt-2 gap-4 ">
         {experiences.map((experience) => {
           return (
             <li
@@ -83,14 +83,14 @@ export function Experience() {
               className={clsx(
                 "group",
                 "flex items-center py-3",
-                "bg-gray-800 hover:bg-gray-700",
-                "outline-none border border-neutral-400 hover:border-neutral-600 rounded-3xl",
-                "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-700 focus-visible:ring-offset-neutral-100"
+                "bg-neutral-200 hover:bg-[#eaeaea]",
+                "outline-none border-2 border-neutral-300 hover:border-neutral-400 rounded-3xl",
+                "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-200 focus-visible:ring-offset-neutral-100"
               )}
             >
               <div className="flex flex-row gap-5 pl-2">
                 <div>
-                  <h3 className="transition duration-200 group-hover:translate-x-1 text-neutral-300 text-lg font-medium sm:text-2xl group-hover:text-green-600/70 ">
+                  <h3 className="transition duration-200 group-hover:translate-x-1 text-neutral-600 text-lg font-medium sm:text-2xl group-hover:text-green-600/70 ">
                     {experience.title}
                     <span className="font-normal text-base text-[#767676]">
                       {experience.year}
@@ -101,7 +101,7 @@ export function Experience() {
                       {experience.company}
                     </Link>
                   </div>
-                  <div className="pt-1 pl-2 transition duration-300 group-hover:translate-x-px text-neutral-100 group-hover:text-neutral-100 mb-1">
+                  <div className="pt-1 pl-2 transition duration-300 group-hover:translate-x-px text-neutral-600 group-hover:text-neutral-700 mb-1">
                     {experience.role}
                     <div>
                       <ul className=" pl-2">
