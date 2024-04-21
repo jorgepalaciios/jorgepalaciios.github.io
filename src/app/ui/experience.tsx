@@ -6,15 +6,46 @@ const experiences = [
     title: "Python Backend Engineer ",
     company: "Digitech Chile C.A",
     year: "[2022-2023]",
-    responsability: "This is what i was in charge of...",
+    role: "Responsible for the backend development of complex systems for large-scale companies in the Chilean industry, which are Digitech's clientels",
+    responsibilities: [
+      {
+        title: "Software Architecture",
+        tasks: [
+          "Design, development, and maintenance of robust software architecture",
+          "Implementation of new features to add value, security, and usability to existing systems.",
+        ],
+      },
+      {
+        title: "Achievements",
+        tasks: [
+          "Digitalization of over 80% of operations, plus automation of key processes for a large food transportation company.",
+        ],
+      },
+    ],
     // icon: Lucide.IconImage,
-    url: "#",
+    url: "https://www.digitech.cl/en",
   },
   {
     title: "Full Stack Developer ",
     company: "JUVA",
     year: "[2018-2022]",
-    responsability: "This is what i was in charge of...",
+    role: "In charge of backend development of complex systems for regional companies in Maturín city, Venezuela.",
+    responsibilities: [
+      {
+        title: "Software Developer",
+        tasks: [
+          "Design, development, and maintenance of robust software architecture.",
+          "Implementation of new features to add value, security, and usability to existing systems.",
+        ],
+      },
+      {
+        title: "Achievements",
+        tasks: [
+          "Branding growth for our clients.",
+          "Successful digitalization of manual operational processes.",
+        ],
+      },
+    ],
     // icon: Lucide.IconImage,
     url: "https://www.instagram.com/juvaonline_/",
   },
@@ -22,44 +53,78 @@ const experiences = [
     title: "Systems Engineer ",
     company: "CCP",
     year: "[2018-2021]",
-    responsability: "This is what i was in charge of...",
+    role: "Systems engineer asociated",
+    responsibilities: [
+      {
+        title: "Software Architecture",
+        tasks: ["Edit tomorrow"],
+      },
+      {
+        title: "Achievements",
+        tasks: ["Achievement 1"],
+      },
+    ],
     // icon: Lucide.IconImage,
-    url: "#",
+    url: "https://www.petroriente.com/",
   },
 ];
 
 export function Experience() {
   return (
-    <div className="">
-      <h2 className=" font-medium text-3xl text-[#242424] mb-3">Experience</h2>
-      <ul className=" p-1 flex flex-col gap-4 text-[#242424] max-w-xl">
+    <section className="flex flex-col gap-4 border-b-2 pb-6 border-gray-300">
+      <h2 className=" text-5xl font-bold text-center transition duration-300 hover:text-green-600/80 hover:transform hover:scale-110 text-green-600/50 mt-6 select-none">
+        Experience
+      </h2>
+      <ul className=" flex flex-col text-[#f3f3f3] md:text-[#242424] pt-2 gap-4 ">
         {experiences.map((experience) => {
           return (
             <li
               key={experience.title}
               className={clsx(
                 "group",
-                "flex items-center px-4 py-3",
-                "bg-neutral-2 hover:bg-neutral-3",
-                "outline-none border border-neutral-4 hover:border-neutral-6 rounded-3xl",
-                "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-7 focus-visible:ring-offset-neutral-1"
+                "flex items-center py-3",
+                "bg-gray-800 hover:bg-gray-700",
+                "outline-none border border-neutral-400 hover:border-neutral-600 rounded-3xl",
+                "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-700 focus-visible:ring-offset-neutral-100"
               )}
             >
               <div className="flex flex-row gap-5 pl-2">
                 <div>
-                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-lg font-medium sm:text-2xl">
+                  <h3 className="transition duration-200 group-hover:translate-x-1 text-neutral-300 text-lg font-medium sm:text-2xl group-hover:text-green-600/70 ">
                     {experience.title}
                     <span className="font-normal text-base text-[#767676]">
                       {experience.year}
                     </span>
                   </h3>
-                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-sm text-[#767676]">
+                  <div className="transition duration-300 pl-2 group-hover:translate-x-px group-hover:text-green-700 text-sm text-[#767676]">
                     <Link href={experience.url} target="_blank">
                       {experience.company}
                     </Link>
                   </div>
-                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11">
-                    {experience.responsability}
+                  <div className="pt-1 pl-2 transition duration-300 group-hover:translate-x-px text-neutral-100 group-hover:text-neutral-100 mb-1">
+                    {experience.role}
+                    <div>
+                      <ul className=" pl-2">
+                        {experience.responsibilities.map((responsibility) => {
+                          return (
+                            <li className="py-2" key={responsibility.title}>
+                              <h3 className="select-none font-medium mt-2 pt-1 border-t border-gray-200/40 md:border-[#242424]/20 transition duration-400 hover:text-green-600/80">
+                                {responsibility.title}
+                              </h3>
+                              <ul>
+                                {responsibility.tasks.map((task) => (
+                                  <li key={task}>
+                                    <ul className="pt-0 list-disc list-inside">
+                                      <li>{task}</li>
+                                    </ul>
+                                  </li>
+                                ))}
+                              </ul>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -67,6 +132,6 @@ export function Experience() {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 }
