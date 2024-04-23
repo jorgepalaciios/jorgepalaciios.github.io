@@ -101,7 +101,7 @@ export function Experience() {
                       {experience.company}
                     </Link>
                   </div>
-                  <div className="pt-1 px-2 text-justify transition duration-100 group-hover:translate-x-px mb-1">
+                  <div className="pt-1 px-2 transition duration-100 group-hover:translate-x-px mb-1">
                     {experience.role}
                     <div>
                       <ul className=" pl-2">
