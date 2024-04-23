@@ -4,24 +4,15 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="text-[#f3f3f3] md:text-[#242424] my-16 text-base">
+    <footer className="dark:text-neutral-200 text-[#242424] my-16 text-base">
       <div className=" ">
-        <div className="flex flex-col justify-between font-medium lg:flex-row">
+        <div className="flex flex-col justify-center items-center font-medium lg:flex-row">
           <div className="flex space-x-4">
-            {/* <div>
-              <Link
-                href="https://www.youtube.com/@giorgiochannel/"
-                className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
-                target="_blank"
-              >
-                Videos
-              </Link>
-            </div> */}
-
             <div>
               <Link
-                href="#"
+                href="/posts"
                 className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
+                target="_blank"
               >
                 Posts
               </Link>
@@ -66,7 +57,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <p className="mt-8 text-gray-600">
+      <p className="mt-8 text-gray-600 dark:text-neutral-200/70 ">
         Built with{" "}
         <a
           href="https://nextjs.org"
@@ -90,15 +81,7 @@ export const Footer = () => {
           target="_blank"
         >
           Tailwind.
-        </a>{" "}
-        {/* and{" "}
-        <a
-          href="https://vercel.com"
-          className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
-          target='_blank'
-        >
-          Vercel
-        </a> */}
+        </a>
       </p>
     </footer>
   );

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { montserrat } from "./ui/fonts";
 import "./ui/globals.css";
+import { ThemeProvider } from "./ui/theme-provider";
+import { ThemeSwitcher } from "./ui/buttons/dark-mode";
+
 import { PreloadResources } from "./lib/preload";
 
 export const metadata: Metadata = {
@@ -48,10 +51,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased bg-[#242424] md:bg-neutral-200`}
+        className={`${montserrat.className} antialiased dark:bg-[#242424] bg-neutral-100`}
       >
-        <PreloadResources />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeSwitcher />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
