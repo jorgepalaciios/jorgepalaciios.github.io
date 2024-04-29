@@ -52,24 +52,6 @@ const experiences = [
     // icon: Lucide.IconImage,
     url: "https://www.instagram.com/juvaonline_/",
   },
-  // {
-  //   title: "Systems Engineer ",
-  //   company: "CCP",
-  //   year: "[2018-2021]",
-  //   role: "Systems engineer asociated",
-  //   responsibilities: [
-  //     {
-  //       title: "Software Architecture",
-  //       tasks: ["Edit tomorrow"],
-  //     },
-  //     {
-  //       title: "Achievements",
-  //       tasks: ["Achievement 1"],
-  //     },
-  //   ],
-  //   // icon: Lucide.IconImage,
-  //   url: "https://www.petroriente.com/",
-  // },
 ];
 
 export function Experience() {

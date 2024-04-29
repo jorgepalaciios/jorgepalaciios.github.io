@@ -20,18 +20,6 @@ export const Footer = () => {
 
             <div>
               <Link
-                href="https://x.com/jorgepalaciios"
-                className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
-                target="_blank"
-                title="I am not famoous on X"
-              >
-                {" "}
-                X
-              </Link>
-            </div>
-
-            <div>
-              <Link
                 href="https://github.com/jorgepalaciios"
                 className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
                 target="_blank"
@@ -39,6 +27,18 @@ export const Footer = () => {
               >
                 {" "}
                 Github
+              </Link>
+            </div>
+
+            <div>
+              <Link
+                href="https://x.com/jorgepalaciios"
+                className={cx(LINK_SUBTLE_STYLES, FOCUS_VISIBLE_OUTLINE)}
+                target="_blank"
+                title="I am not famoous on X"
+              >
+                {" "}
+                X
               </Link>
             </div>
 
