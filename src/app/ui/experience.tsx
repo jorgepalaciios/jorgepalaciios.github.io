@@ -12,6 +12,7 @@ const experiences = [
         title: "Backend Software Developer",
         tasks: [
           "Design, development, and maintenance of robust software architecture",
+          "Developed and maintained a large-scale Python Django application to manage the inventory system from a client's company.",
           "Implementation of new features to add value, security, and usability to existing systems.",
         ],
       },
@@ -34,8 +35,10 @@ const experiences = [
       {
         title: "Software Developer",
         tasks: [
-          "Design, development, and maintenance of robust software architecture.",
-          "Implementation of new features to add value, security, and usability to existing systems.",
+          "Define system requirements and develop highlevel system designs",
+          "Interface with assigned project teams to ensure that system designs meet requirements",
+          "Perform system integration and validation",
+          "Support system deployment and transition to operations",
         ],
       },
       {
@@ -49,24 +52,24 @@ const experiences = [
     // icon: Lucide.IconImage,
     url: "https://www.instagram.com/juvaonline_/",
   },
-  {
-    title: "Systems Engineer ",
-    company: "CCP",
-    year: "[2018-2021]",
-    role: "Systems engineer asociated",
-    responsibilities: [
-      {
-        title: "Software Architecture",
-        tasks: ["Edit tomorrow"],
-      },
-      {
-        title: "Achievements",
-        tasks: ["Achievement 1"],
-      },
-    ],
-    // icon: Lucide.IconImage,
-    url: "https://www.petroriente.com/",
-  },
+  // {
+  //   title: "Systems Engineer ",
+  //   company: "CCP",
+  //   year: "[2018-2021]",
+  //   role: "Systems engineer asociated",
+  //   responsibilities: [
+  //     {
+  //       title: "Software Architecture",
+  //       tasks: ["Edit tomorrow"],
+  //     },
+  //     {
+  //       title: "Achievements",
+  //       tasks: ["Achievement 1"],
+  //     },
+  //   ],
+  //   // icon: Lucide.IconImage,
+  //   url: "https://www.petroriente.com/",
+  // },
 ];
 
 export function Experience() {
