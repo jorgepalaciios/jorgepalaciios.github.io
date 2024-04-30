@@ -8,7 +8,7 @@ import { PreloadResources } from "./lib/preload";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Jorge Palacios",
+    template: "%s | Jorge Palacios - Systems engineer",
     default: "Jorge Palacios",
   },
   description: "This is my proffesional portfolio as a Systems Engineer",

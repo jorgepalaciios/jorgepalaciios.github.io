@@ -1,20 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
-
-const skills = [
-  {
-    title: "Tech stack ",
-    icon: "Digitech Chile C.A",
-    // icon: Lucide.IconImage,
-    url: "https://www.digitech.cl/en",
-  },
-  {
-    title: "Soft skills",
-    icon: "JUVA",
-    // icon: Lucide.IconImage,
-    url: "https://www.instagram.com/juvaonline_/",
-  },
-];
+import { skills } from "../lib/constants";
 
 export function Skills() {
   return (
