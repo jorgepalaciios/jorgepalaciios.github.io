@@ -1,6 +1,9 @@
 // show customised outline when an element has focus (but only if the user is
 // using the keyboard)
 // TODO: move this to a global css rule
+import { DiDjango } from "react-icons/di";
+
+
 export const FOCUS_VISIBLE_OUTLINE = `focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600/70`
 
 export const LINK_STYLES = `text-green-800/90 underline decoration-red-900/30 underline-offset-2 transition-all hover:text-red-800 hover:decoration-red-900/50`
@@ -64,19 +67,3 @@ export const experiences = [
 ];
 
 
-//SKILLS
-
-export const skills = [
-  {
-    title: "Tech stack ",
-    icon: "Digitech Chile C.A",
-    // icon: Lucide.IconImage,
-    url: "https://www.digitech.cl/en",
-  },
-  {
-    title: "Soft skills",
-    icon: "JUVA",
-    // icon: Lucide.IconImage,
-    url: "https://www.instagram.com/juvaonline_/",
-  },
-];
