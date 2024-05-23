@@ -17,7 +17,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
-      className={`w-fit fixed z-10 right-5 top-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-[#242424] text-neutral-200 dark:bg-neutral-200 dark:text-[#242424]`}
+      className={`w-fit absolute right-5 top-2 z-10 md:fixed md:right-5 md:top-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-[#242424] text-neutral-200 dark:bg-neutral-200 dark:text-[#242424]`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       title="Change Theme"
     >
