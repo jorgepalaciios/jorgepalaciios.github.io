@@ -1,80 +1,10 @@
 import clsx from "clsx";
 import Link from "next/link";
-
-const experiences = [
-  {
-    title: "Python Backend Engineer ",
-    company: "Digitech Chile C.A",
-    year: "[2022-2023]",
-    role: "Responsible for the backend development of complex systems for large-scale companies in the Chilean industry, which are Digitech's clientels",
-    responsibilities: [
-      {
-        title: "Backend Software Developer",
-        tasks: [
-          "Design, development, and maintenance of robust software architecture",
-          "Developed and maintained a large-scale Python Django application to manage the inventory system from a client's company.",
-          "Implementation of new features to add value, security, and usability to existing systems.",
-        ],
-      },
-      {
-        title: "Achievements",
-        tasks: [
-          "Digitalization of over 80% of operations, plus automation of key processes for a large food transportation company.",
-        ],
-      },
-    ],
-    // icon: Lucide.IconImage,
-    url: "https://www.digitech.cl/en",
-  },
-  {
-    title: "Full Stack Developer ",
-    company: "JUVA",
-    year: "[2018-2022]",
-    role: "In charge of backend development of complex systems for regional companies in Maturín city, Venezuela.",
-    responsibilities: [
-      {
-        title: "Software Developer",
-        tasks: [
-          "Define system requirements and develop highlevel system designs",
-          "Interface with assigned project teams to ensure that system designs meet requirements",
-          "Perform system integration and validation",
-          "Support system deployment and transition to operations",
-        ],
-      },
-      {
-        title: "Achievements",
-        tasks: [
-          "Branding growth for our clients.",
-          "Successful digitalization of manual operational processes.",
-        ],
-      },
-    ],
-    // icon: Lucide.IconImage,
-    url: "https://www.instagram.com/juvaonline_/",
-  },
-  // {
-  //   title: "Systems Engineer ",
-  //   company: "CCP",
-  //   year: "[2018-2021]",
-  //   role: "Systems engineer asociated",
-  //   responsibilities: [
-  //     {
-  //       title: "Software Architecture",
-  //       tasks: ["Edit tomorrow"],
-  //     },
-  //     {
-  //       title: "Achievements",
-  //       tasks: ["Achievement 1"],
-  //     },
-  //   ],
-  //   // icon: Lucide.IconImage,
-  //   url: "https://www.petroriente.com/",
-  // },
-];
+import { experiences } from "@/app/lib/constants";
 
 export function Experience() {
   return (
-    <section className="flex flex-col gap-4 border-b-2 pb-6 dark:border-neutral-200/10 border-[#242424]/10">
+    <section className="flex flex-col gap-4 pb-8">
       <h2 className=" text-5xl font-bold text-center transition duration-300 hover:text-green-600/80 hover:transform hover:scale-110 text-green-600/70 mt-6 dark:text-green-600 select-none">
         Experience
       </h2>
