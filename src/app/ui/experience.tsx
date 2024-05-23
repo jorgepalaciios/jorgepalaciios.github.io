@@ -4,7 +4,7 @@ import { experiences } from "@/app/lib/constants";
 
 export function Experience() {
   return (
-    <section className="flex flex-col gap-4 border-b-2 pb-8 dark:border-neutral-200/10 border-[#242424]/10">
+    <section className="flex flex-col gap-4 pb-8">
       <h2 className=" text-5xl font-bold text-center transition duration-300 hover:text-green-600/80 hover:transform hover:scale-110 text-green-600/70 mt-6 dark:text-green-600 select-none">
         Experience
       </h2>
