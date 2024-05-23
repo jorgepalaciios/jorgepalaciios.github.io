@@ -42,7 +42,7 @@ const softSkills = [
     skills: {
       skill1: "Team work",
       skill2: "Bilingual",
-      skill3: "Collaboration",
+      skill3: "Interpersonal Communication",
       skill4: "Systemic thinking",
       skill5: "Analitical thinking",
     },
